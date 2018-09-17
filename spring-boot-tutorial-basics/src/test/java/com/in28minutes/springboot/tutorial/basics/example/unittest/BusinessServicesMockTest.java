@@ -37,4 +37,5 @@ public class BusinessServicesMockTest {
 		when(dataServiceMock.retrieveAllData()).thenReturn(new int[] {});
 		assertEquals(Integer.MIN_VALUE, businessImpl.findTheGreatestFromAllData());
 	}
+
 }

@@ -3,6 +3,7 @@ package com.in28minutes.springboot.tutorial.basics.example;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class SpringBootTutorialBasicsApplication {
@@ -13,5 +14,15 @@ public class SpringBootTutorialBasicsApplication {
 		for (String name : applicationContext.getBeanDefinitionNames()) {
 			System.out.println(name);
 		}
+	}
+
+
+	@Bean
+	public ServiceSingletonInIt initMePlease() {
+		// read yml
+		// call fedid
+		// name
+		// conf ...
+		return new ServiceSingletonInIt("yes");
 	}
 }

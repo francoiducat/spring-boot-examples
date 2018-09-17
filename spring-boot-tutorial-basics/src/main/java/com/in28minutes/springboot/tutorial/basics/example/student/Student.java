@@ -1,5 +1,8 @@
 package com.in28minutes.springboot.tutorial.basics.example.student;
 
+import org.hibernate.validator.constraints.SafeHtml;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,7 +13,7 @@ public class Student {
 	@GeneratedValue
 	private Long id;
 	private String name;
-	private String passportNumber;
+	private String passportNumber;// passport_number
 
 	public Student() {
 		super();
